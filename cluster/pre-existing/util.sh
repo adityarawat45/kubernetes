@@ -31,7 +31,7 @@ function detect-project() {
 
   if [[ -z "${PROJECT:-}" ]]; then
     echo "Set 'PROJECT' to the name of the container project: $CONTAINER_REGISTRY/$PROJECT/kubemark" >&2
-    exit 1
+    exit  1
   fi
 
   if [[ -z "${SERVICE_CLUSTER_IP_RANGE:-}" ]]; then
